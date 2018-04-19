@@ -9,8 +9,9 @@ RUN git clone https://gist.github.com/TrueOsiris/dfb3ba5b307230251120e407ae0bd11
  && chmod +x amd_sdk.sh \
  && ./amd_sdk.sh 
 
-RUN tar -xvjf AMD-APP*.tar.bz2 \
- && rm AMD-APP-*.tar.bz2 \
+RUN tar -xvjf AMD-APP*.tar.bz2 
+
+RUN rm AMD-APP-*.tar.bz2 \
  && ls -hl AMD* 
 
 RUN mv AMD*.sh AMD-APP-SDK-v3.0.linux64.sh \
