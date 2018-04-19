@@ -7,7 +7,8 @@ RUN git clone https://gist.github.com/TrueOsiris/dfb3ba5b307230251120e407ae0bd11
  && cp test/amd_sdk.sh ./ \
  && rm -R test \
  && chmod +x amd_sdk.sh \
- && ./amd_sdk.sh 
+ && ./amd_sdk.sh \
+ && rm amd_sdk.sh
 
 RUN tar -xvjf AMD-SDK.tar.bz2 
 
